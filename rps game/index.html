@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      description="https://youtube.com/@coding_with_mayavi0"
+    />
+    <meta
+      http-equiv="refresh"
+      content="url=https://youtube.com/@coding_with_mayavi0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RPS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>rock paper scissors</h2>
+      <div class="option_container">
+        <button class="circle" onclick="check('rock')">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7480/7480279.png"
+            alt="Rock"
+          />
+          <img src="./asset/asteroid.png" alt="Rock" />
+        </button>
+        <button class="circle" onclick="check('paper')">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/737/737804.png"
+            alt="Paper"
+          />
+          <img src="./asset/paper.png" alt="Paper" />
+        </button>
+        <button class="circle" onclick="check('scissor')">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/10513/10513990.png"
+            alt="scissor"
+          />
+          <img src="./asset/scissor.png" alt="scissor" />
+        </button>
+      </div>
+
+      <div class="Information">
+        <div class="results">
+          result:
+          <span class="result" id="result"></span>
+        </div>
+        <div class="scores">
+          <div class="score" id="">
+            computer Score: <span id="cScore"></span>
+          </div>
+          <div class="score" id="">Your score: <span id="yScore"></span></div>
+          <div class="score" id="">total ties: <span id="tScore"></span></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="autoplay" id="autoPlay">auto play</button>
+        <button class="stoplay" id="stopPlay">stop auto play</button>
+        <button class="stoplay" id="resetBtn">reset</button>
+      </div>
+      <span class="note"
+        ><h4>Note :</h4>
+        u can also play by using
+        <h3>R P S</h3>
+        KEYS</span
+      >
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

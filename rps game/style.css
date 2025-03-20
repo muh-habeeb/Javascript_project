@@ -1,0 +1,115 @@
+/*  importing fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
+/*  */
+body {
+  margin: 0;
+  background: #000033;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-transform: capitalize;
+  user-select: none;
+}
+.container {
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgba(247, 247, 247, 0.4);
+  transition: 0.3s all;
+  border-radius: 16px;
+  width: 75%;
+}
+.container h2 {
+  font-family: "DynaPuff", system-ui;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container .option_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+.option_container .circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  text-align: center;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  background: transparent;
+}
+.circle img {
+  height: 50px;
+  object-fit: cover;
+  position: absolute;
+}
+.circle:active:not(:disabled) img {
+  transform: scale(1.2);
+  object-fit: cover;
+}
+
+.Information,
+.buttons {
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 5px 1px #1c2c72;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin: 20px 0;
+}
+.Information .score {
+  margin: 5px 0;
+}
+span {
+  color: #84f597;
+}
+.buttons button {
+  font-family: "Aldrich", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  box-shadow: inset 0 0 4px 3px #fff;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s;
+}
+.buttons button:hover {
+  box-shadow: inset 0 0 44px 30px #fff;
+  color: #000033;
+}
+.buttons button:active {
+  box-shadow: inset 0 0 44px 3px #fff;
+  color: #000033;
+}
+.note {
+  font-family: "DynaPuff", system-ui;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.note h3{
+  color:#fff;
+  font-size: 25px;
+}
