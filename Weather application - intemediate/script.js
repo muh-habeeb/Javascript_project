@@ -1,5 +1,5 @@
 // api key  of openweather
-const API_KEY = "01e438eb6e55f82d558ef1fac2a8fd32";
+const API_KEY = "";//your openweather api
 
 //let get the dom elements
 const cityInput = document.getElementById("city_input");
