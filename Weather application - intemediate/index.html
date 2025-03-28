@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h1 class="nav-title">Weather Dashboard</h1>
+    </div>
+    <div class="container">
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <input
+          type="text"
+          id="city_input"
+          class="city-input"
+          placeholder="E.G, Korea, Kerala, New York"
+        />
+        <button class="search-btn">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn">Use Current Location</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>_________</h2>
+            <h4>Temperature: __c°</h4>
+            <h4>Wind : ____ M/S</h4>
+            <h4>Humidity: __%</h4>
+          </div>
+          <div class="icon">
+            <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="" />
+            <h4>_______</h4>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>4 -Days Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h2>_________</h2>
+              <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" />
+              <h4>Climate: __</h4>
+              <h4>Temp: __c°</h4>
+              <h4>Wind : ____ M/S</h4>
+              <h4>Humidity: __%</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- script file url  -->
+     <script src="./script.js"></script>
+  </body>
+</html>
